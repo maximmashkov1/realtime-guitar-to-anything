@@ -1,15 +1,6 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
-
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
-import math
 import math
 
 def get_timestep_embedding(timesteps, embedding_dim, max_period=10000, scale=1000):
@@ -322,3 +313,4 @@ class CausalVocoder(nn.Module):
         x = torch.tanh(x)
         
         return x
+
